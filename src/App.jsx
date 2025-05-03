@@ -11,6 +11,7 @@ import AdminRegister from './pages/AdminRegister';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import EditProfile from './pages/EditProfile';
+import VerifyEmail from './pages/VerifyEmail';
 
 
 // Protected route component for merchants
@@ -32,6 +33,7 @@ return (
   <Route exact path="/" element={<Home/>}/>
   <Route exact path="/register" element={<Register/>}/>
   <Route exact path="/login" element={<Login/>}/>
+  <Route exact path="/verify-email" element={<VerifyEmail/>}/>
   <Route exact path="/dashboard" element={
      <MerchantRoute>
     <Dashboard/>
